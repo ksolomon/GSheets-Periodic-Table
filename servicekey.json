@@ -1,0 +1,12 @@
+{
+  "type": "service_account",
+  "project_id": "fdr-periodic-table-test",
+  "private_key_id": "9c6d98b6590009995a9d558e5d6a6b060a304799",
+  "private_key": "-----BEGIN PRIVATE KEY-----\nMIIEvgIBADANBgkqhkiG9w0BAQEFAASCBKgwggSkAgEAAoIBAQCXgMQYt+znxpBG\nOPItDkhAkDX3J2HQZOuwg6tUhN/RKCqB62FFqRmCEAropouDc77dl90ugDOhyShK\nhvJaVhXXrKoboAG4Ub6ob1Hf2okM69ccBjD2mcX2dunsFljYsuvmc6GkSBFzJaO1\nQh7etlGT7tq+TVUoXpV/535x8gp1PzAvGpNxoc1SRwyU/DNZi9Pw8Fsm9JEFQHCs\nHndg4bT7sAAkIdFr7a7flvKB+S0WVyUsBW1PwOSrbIgPN12LuD+WoJuFW5k6ds4V\n7W+ECWBtX0avn+T2c+ZpR2xAwii6Vn4ovydVCGYveq6pcZMkmUYSp3fKIKr/5cK5\n5sD42yzxAgMBAAECggEABK2BoH/BTVC4sKpec9yuh2vMdsKdBwmuq0cNebEWlgcm\n9Nb3LGbxti3XoGJQCXF/8aiYODDWJ0cmOtLa1cY1q3CV2f+BPhcsC1hQj1hYhfEc\nNa3NQjfyQE9gnpz8BkjT9swYMBHXlBYT7WtKt7aqYyZrU5fgqrvs4sObiFogT4ll\nQfZqa00yW9zDLatkseNl9UFE10ugv++c8vgZl6Ln0svQYsOC0714y4QDwWcWTI0W\n+Fp342WRZxxcb/XLxJMHgHQ57mG2kFFEJunX+9IzMF7Tg9wA2ByfP8IlQgZsh+Co\nboO5BASCqBirDrEar1xeqbkX5a1N7/cXeZO4VxZ/rwKBgQDJGq6u9McOlQrnW5V4\nkpAwBewJckWdPQvmZo8RMtazj6jmCQxrZ/MHDY871APe/1M6ULr5OKeQRW2h12It\ntW4Zng1rZ/ug7jEAV/LahT0Zt4RFFp3D4D9zqdM/ES9DvPQ3s6YXJY7swU0wo6pn\ndnc9BG7slW54830bsJscPFVIPwKBgQDA2+lIR4Ou+xWuHtMK0x3Rgbqc6O/5d5H8\nH5mTYObT6jUhPnUH+/iQSl5XTH/gAXV15vAXoD69YcmRWaVFzbZe96kW3JTsNkfl\nH9ZphF95Lir6LFS3fybtzB5VxmsJIm2vgUlzZ6SoGbBZ24CHR8bQ72HmAiDhXK2L\n8Oq+ofm+zwKBgQDARd2L8wY6f+9r4hlXrTFkaNUS9wlt24b8I0RYGjZCeXDvdulD\n65/lN2ahugR1ecJWOAd77lnuyyKVoPsCXrvEjGOiNEnVxMZe4LeVi9wuMVKqR4RR\nWZ7w9Aa//qsk5YzNkNqUuNkcrXgir+hlgVNhqFJxqjF0PMB57/FtHpYfOwKBgAXu\nvd5bVNGtJ52TlSpgFCq9st/gyoECDJuU3USLVo5uRfQf17nHJn5Jy10kHUrmwJY/\n5GLVqxhoSasO9uaOzW1ecPUjE/GwOcXylMXqLIWtxeSsOG7smmX2QXiiAejmBjm/\n4GKMbaQ+Jg6dkfaXXqZOttQ8fIZyM2R6pL34fZZBAoGBAIV+R8eOGY5kcMzyVHsH\nb14tC7o7ZW47IVtrb6OAWufEXP0loHrhYNNokkUVyyCyFtDFYQNiwZX6o2GSLlqi\nhRDH7cQAHMfGspcfjJRxHVGl5Xq/f2pYnb1eJ/ZbJm9yIoUwo6B4ftjm71UjFwHS\nyddyESszlcLanU0dE3Kjcz4q\n-----END PRIVATE KEY-----\n",
+  "client_email": "fdr-periodic-table@fdr-periodic-table-test.iam.gserviceaccount.com",
+  "client_id": "106582282613570762266",
+  "auth_uri": "https://accounts.google.com/o/oauth2/auth",
+  "token_uri": "https://oauth2.googleapis.com/token",
+  "auth_provider_x509_cert_url": "https://www.googleapis.com/oauth2/v1/certs",
+  "client_x509_cert_url": "https://www.googleapis.com/robot/v1/metadata/x509/fdr-periodic-table%40fdr-periodic-table-test.iam.gserviceaccount.com"
+}
