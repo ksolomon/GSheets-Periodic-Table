@@ -5,58 +5,63 @@ $client = new \Google_Client();
 $client->setApplicationName('FDR_PT');
 $client->setScopes([\Google_Service_Sheets::SPREADSHEETS]);
 $client->setAccessType('offline');
-$client->setAuthConfig(__DIR__ . '/servicekey.json');
+
+echo '<!-- Pare -->';
+$client->setAuthConfig(__DIR__ . '/servicekey-pare.json');
+$spreadsheetId = "1XtspnkaEpz3GZIr9dU9qtl002hEyOt6l9SVZBVd9YAM";
+#echo '<!-- Keith -->';
+#$client->setAuthConfig(__DIR__ . '/servicekey.json');
+#$spreadsheetId = "1xdVCgL3zSolvJixsq5XcrHQ7BLgRiDlPoWR5D2ICzR8";
+
 $service = new Google_Service_Sheets($client);
-#$spreadsheetId = "1XtspnkaEpz3GZIr9dU9qtl002hEyOt6l9SVZBVd9YAM"; // Pare
-$spreadsheetId = "1xdVCgL3zSolvJixsq5XcrHQ7BLgRiDlPoWR5D2ICzR8"; // Keith
 
 // Description Query
-$desc_range = 'Periodic Table Descriptions!A2:C107';
+$desc_range = 'Periodic Table Descriptions!A2:D107';
 $desc_resp = $service->spreadsheets_values->get($spreadsheetId, $desc_range);
 $desc_els = $desc_resp->getValues();
 
 // Row 1
-$r1_el_range = 'Periodic Table Entries!A2:C19';
+$r1_el_range = 'Periodic Table Entries!A2:E19';
 $r1_el_resp = $service->spreadsheets_values->get($spreadsheetId, $r1_el_range);
 $r1_els = $r1_el_resp->getValues();
 
 // Row 2
-$r2_el_range = 'Periodic Table Entries!A20:C37';
+$r2_el_range = 'Periodic Table Entries!A20:E37';
 $r2_el_resp = $service->spreadsheets_values->get($spreadsheetId, $r2_el_range);
 $r2_els = $r2_el_resp->getValues();
 
 // Row 3
-$r3_el_range = 'Periodic Table Entries!A38:C55';
+$r3_el_range = 'Periodic Table Entries!A38:E55';
 $r3_el_resp = $service->spreadsheets_values->get($spreadsheetId, $r3_el_range);
 $r3_els = $r3_el_resp->getValues();
 
 // Row 4
-$r4_el_range = 'Periodic Table Entries!A56:C73';
+$r4_el_range = 'Periodic Table Entries!A56:E73';
 $r4_el_resp = $service->spreadsheets_values->get($spreadsheetId, $r4_el_range);
 $r4_els = $r4_el_resp->getValues();
 
 // Row 5
-$r5_el_range = 'Periodic Table Entries!A74:C91';
+$r5_el_range = 'Periodic Table Entries!A74:E91';
 $r5_el_resp = $service->spreadsheets_values->get($spreadsheetId, $r5_el_range);
 $r5_els = $r5_el_resp->getValues();
 
 // Row 6
-$r6_el_range = 'Periodic Table Entries!A92:C109';
+$r6_el_range = 'Periodic Table Entries!A92:E109';
 $r6_el_resp = $service->spreadsheets_values->get($spreadsheetId, $r6_el_range);
 $r6_els = $r6_el_resp->getValues();
 
 // Row 7
-$r7_el_range = 'Periodic Table Entries!A110:C127';
+$r7_el_range = 'Periodic Table Entries!A110:E127';
 $r7_el_resp = $service->spreadsheets_values->get($spreadsheetId, $r7_el_range);
 $r7_els = $r7_el_resp->getValues();
 
 // Row 8
-$r8_el_range = 'Periodic Table Entries!A128:C141';
+$r8_el_range = 'Periodic Table Entries!A128:E141';
 $r8_el_resp = $service->spreadsheets_values->get($spreadsheetId, $r8_el_range);
 $r8_els = $r8_el_resp->getValues();
 
 // Row 9
-$r9_el_range = 'Periodic Table Entries!A142:C155';
+$r9_el_range = 'Periodic Table Entries!A142:E155';
 $r9_el_resp = $service->spreadsheets_values->get($spreadsheetId, $r9_el_range);
 $r9_els = $r9_el_resp->getValues();
 ?>
@@ -65,7 +70,7 @@ $r9_els = $r9_el_resp->getValues();
 <html>
 
 <head>
-	<title>Franklin D. Roosevelt's Periodic Table New Deal Prgrams</title>
+	<title>Franklin D. Roosevelt's Periodic Table New Deal Programs</title>
 	<link rel="stylesheet" href="style-fdr.css?v=<?php echo filemtime('style.css'); ?>" media="screen, projection" />
 </head>
 
@@ -81,9 +86,10 @@ $r9_els = $r9_el_resp->getValues();
 					print 'No data found.<br />';
 				} else {
 					foreach ($r1_els as $row) {
-						$class  = $row[1];
-						$title  = $row[2];
-						$target = '#' . $title;
+						$id  = $row[1];
+						$class  = $row[2];
+						$title  = $row[3];
+						$target = '#' . $id;
 
 						if ($class == 'element empty-element') {
 							echo '<div class="element empty-element"></div>';
@@ -101,9 +107,10 @@ $r9_els = $r9_el_resp->getValues();
 					print 'No data found.<br />';
 				} else {
 					foreach ($r2_els as $row) {
-						$class  = $row[1];
-						$title  = $row[2];
-						$target = '#' . $title;
+						$id  = $row[1];
+						$class  = $row[2];
+						$title  = $row[3];
+						$target = '#' . $id;
 
 						if ($class == 'element empty-element') {
 							echo '<div class="element empty-element"></div>';
@@ -121,9 +128,10 @@ $r9_els = $r9_el_resp->getValues();
 					print 'No data found.<br />';
 				} else {
 					foreach ($r3_els as $row) {
-						$class  = $row[1];
-						$title  = $row[2];
-						$target = '#' . $title;
+						$id  = $row[1];
+						$class  = $row[2];
+						$title  = $row[3];
+						$target = '#' . $id;
 
 						if ($class == 'element empty-element') {
 							echo '<div class="element empty-element"></div>';
@@ -141,9 +149,10 @@ $r9_els = $r9_el_resp->getValues();
 					print 'No data found.<br />';
 				} else {
 					foreach ($r4_els as $row) {
-						$class  = $row[1];
-						$title  = $row[2];
-						$target = '#' . $title;
+						$id  = $row[1];
+						$class  = $row[2];
+						$title  = $row[3];
+						$target = '#' . $id;
 
 						if ($class == 'element empty-element') {
 							echo '<div class="element empty-element"></div>';
@@ -161,9 +170,10 @@ $r9_els = $r9_el_resp->getValues();
 					print 'No data found.<br />';
 				} else {
 					foreach ($r5_els as $row) {
-						$class  = $row[1];
-						$title  = $row[2];
-						$target = '#' . $title;
+						$id  = $row[1];
+						$class  = $row[2];
+						$title  = $row[3];
+						$target = '#' . $id;
 
 						if ($class == 'element empty-element') {
 							echo '<div class="element empty-element"></div>';
@@ -181,9 +191,10 @@ $r9_els = $r9_el_resp->getValues();
 					print 'No data found.<br />';
 				} else {
 					foreach ($r6_els as $row) {
-						$class  = $row[1];
-						$title  = $row[2];
-						$target = '#' . $title;
+						$id  = $row[1];
+						$class  = $row[2];
+						$title  = $row[3];
+						$target = '#' . $id;
 
 						if ($class == 'element empty-element') {
 							echo '<div class="element empty-element"></div>';
@@ -201,9 +212,10 @@ $r9_els = $r9_el_resp->getValues();
 					print 'No data found.<br />';
 				} else {
 					foreach ($r7_els as $row) {
-						$class  = $row[1];
-						$title  = $row[2];
-						$target = '#' . $title;
+						$id  = $row[1];
+						$class  = $row[2];
+						$title  = $row[3];
+						$target = '#' . $id;
 
 						if ($class == 'element empty-element') {
 							echo '<div class="element empty-element"></div>';
@@ -223,9 +235,10 @@ $r9_els = $r9_el_resp->getValues();
 					print 'No data found.<br />';
 				} else {
 					foreach ($r8_els as $row) {
-						$class  = $row[1];
-						$title  = $row[2];
-						$target = '#' . $title;
+						$id  = $row[1];
+						$class  = $row[2];
+						$title  = $row[3];
+						$target = '#' . $id;
 
 						if ($class == 'element empty-element') {
 							echo '<div class="element empty-element"></div>';
@@ -243,9 +256,10 @@ $r9_els = $r9_el_resp->getValues();
 					print 'No data found.<br />';
 				} else {
 					foreach ($r9_els as $row) {
-						$class  = $row[1];
-						$title  = $row[2];
-						$target = '#' . $title;
+						$id  = $row[1];
+						$class  = $row[2];
+						$title  = $row[3];
+						$target = '#' . $id;
 
 						if ($class == 'element empty-element') {
 							echo '<div class="element empty-element"></div>';

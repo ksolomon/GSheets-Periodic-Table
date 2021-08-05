@@ -1,0 +1,52 @@
+Key:
+group-rsvlt - The Roosevelts
+group-progs - Programs
+group-nra - NRA Affiliates
+group-ag - Agriculture Affiliates
+group-cab - Cabinet Members
+group-nya - NYA Affiliates
+group-econ - Economic Affiliates
+group-adv - Advisers and Supporters
+group-pwa - Public Works Affiliates
+group-nde - New Deal Events
+
+Group & Description Colors:
+.element.group-rsvlt: #f68e59
+.element.group-rsvlt - hover: #C4754B
+.description.group-rsvlt: #C4754B
+
+.element.group-progs: #426977
+.element.group-progs - hover: #273F42
+.description.group-progs: #273F42
+
+.element.group-nra: #d6a742
+.element.group-nra - hover: #8E6B2D
+.description.group-nra: #8E6B2D
+
+.element.group-ag: #8f9747
+.element.group-ag - hover: #5D5E2B
+.description.group-ag: #5D5E2B
+
+.element.group-cab: #ce5638
+.element.group-cab - hover: #7C2C24
+.description.group-cab: #7C2C24
+
+.element.group-nya: #7e1416
+.element.group-nya - hover: #560F14
+.description.group-nya: #560F14
+
+.element.group-econ: #976a7f
+.element.group-econ - hover: #59404D
+.description.group-econ: #59404D
+
+.element.group-adv: #76a0b4
+.element.group-adv - hover: #3E565B
+.description.group-adv: #3E565B
+
+.element.group-pwa: #979c97
+.element.group-pwa - hover: #5B5E5B
+.description.group-pwa: #5B5E5B
+
+.element.group-nde: #553b50
+.element.group-nde - hover: #2D1F2C
+.description.group-nde: #2D1F2C

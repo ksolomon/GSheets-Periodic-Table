@@ -22,10 +22,19 @@ h1, h2 {
 h2 { font-size: 2rem; }
 
 img.desc-img {
+	/* float: left; */
+	height: auto;
+	margin: 0 10px 0 0;
+	max-width: 450px;
+	width: 100%;
+}
+
+img.link-thumb {
+	display: inline-block;
 	float: left;
 	height: auto;
 	margin: 0 10px 0 0;
-	max-width: 150px;
+	max-width: 75px;
 }
 
 .elements { font-size: 12px; }
@@ -39,6 +48,12 @@ img.desc-img {
 	padding: 1em;
 	text-overflow: ellipsis;
 	width: 100%;
+}
+
+.description p.clear:after {
+	content: "";
+	display: table;
+	clear: both;
 }
 
 .description h1, .description h2 { color: #fff; }
