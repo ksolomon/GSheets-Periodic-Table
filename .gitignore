@@ -1,7 +1,9 @@
 .vscode/
 servicekey.json
 servicekey-pare.json
+servicekey-ww2.json
 google/
+google/*
 notes.txt
 google/CODE_OF_CONDUCT.md
 google/composer.json

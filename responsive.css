@@ -1,0 +1,51 @@
+@media all and (min-width: 1280px) and (max-width: 1440px) {
+	/* REMOVE AFTER TESTING!! */
+	/* main { border: 1px solid green; } */
+
+	.key {
+		margin: 20px 0 0 40px;
+	}
+}
+
+@media all and (min-width: 1024px) and (max-width: 1280px) {
+	/* REMOVE AFTER TESTING!! */
+	/* main { border: 1px solid green; } */
+
+	.key, .rights {
+		margin: 20px 0 0 40px;
+	}
+}
+
+@media all and (min-width: 768px) and (max-width: 1024px) {
+	/* REMOVE AFTER TESTING!! */
+	/* main { border: 1px solid yellow; } */
+
+	.key {
+		margin: 20px 0 0 40px;
+	}
+}
+
+@media all and (min-width: 480px) and (max-width: 768px) {
+	/* REMOVE AFTER TESTING!! */
+	/* main { border: 1px solid blue; } */
+}
+
+@media all and (orientation: landscape) and (max-width: 768px) {
+	/* REMOVE AFTER TESTING!! */
+	/* main { border: 1px solid orange; } */
+}
+
+@media all and (max-width: 480px) {
+	/* REMOVE AFTER TESTING!! */
+	/* main { border: 1px solid red; } */
+}
+
+/* Portrait */
+@media screen and (orientation: portrait) { /* Portrait styles here */ }
+/* Landscape */
+@media screen and (orientation: landscape) { /* Landscape styles here */ }
+
+/* Mobile navigation menu styles */
+@media only screen and (max-width: 768px) {
+
+}

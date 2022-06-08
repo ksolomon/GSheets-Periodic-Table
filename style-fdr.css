@@ -132,7 +132,7 @@ img.link-thumb {
 @media screen and (min-width: 1920px) {
 	.elements { font-size: 12px; }
 }
-@media screen and (min-width: 600px) {
+@media screen and (min-width: 768px) {
 	.row {
 		display: flex;
 		height: 6vmin;
@@ -160,14 +160,16 @@ img.link-thumb {
 	.description:target { display: block; }
 
 	.key {
+		border: 1px solid #000;
 		color: #000;
 		display: block;
 		font-weight: normal;
 		line-height: 1.8;
 		list-style-type: none;
-		max-width: 650px;
+		margin: -80px 0 0 40px;
+		max-width: 370px;
 		padding: 0;
-		width: 60%;
+		width: 40%;
 	}
 
 	.key li {
@@ -188,5 +190,14 @@ img.link-thumb {
 		top: 50%;
 		transform: translate(0, -50%);
 		width: 12px;
+	}
+}
+
+@media screen and (max-width: 600px) {
+	/* REMOVE AFTER TESTING!! */
+	#wrapper { border: 1px solid red; }
+
+	.key {
+		margin: 0 0 0 40px;
 	}
 }

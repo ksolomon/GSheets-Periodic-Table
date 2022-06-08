@@ -21,47 +21,47 @@ $desc_resp = $service->spreadsheets_values->get($spreadsheetId, $desc_range);
 $desc_els = $desc_resp->getValues();
 
 // Row 1
-$r1_el_range = 'Periodic Table Entries!A2:E19';
+$r1_el_range = 'Periodic Table Entries!A2:G19';
 $r1_el_resp = $service->spreadsheets_values->get($spreadsheetId, $r1_el_range);
 $r1_els = $r1_el_resp->getValues();
 
 // Row 2
-$r2_el_range = 'Periodic Table Entries!A20:E37';
+$r2_el_range = 'Periodic Table Entries!A20:G37';
 $r2_el_resp = $service->spreadsheets_values->get($spreadsheetId, $r2_el_range);
 $r2_els = $r2_el_resp->getValues();
 
 // Row 3
-$r3_el_range = 'Periodic Table Entries!A38:E55';
+$r3_el_range = 'Periodic Table Entries!A38:G55';
 $r3_el_resp = $service->spreadsheets_values->get($spreadsheetId, $r3_el_range);
 $r3_els = $r3_el_resp->getValues();
 
 // Row 4
-$r4_el_range = 'Periodic Table Entries!A56:E73';
+$r4_el_range = 'Periodic Table Entries!A56:G73';
 $r4_el_resp = $service->spreadsheets_values->get($spreadsheetId, $r4_el_range);
 $r4_els = $r4_el_resp->getValues();
 
 // Row 5
-$r5_el_range = 'Periodic Table Entries!A74:E91';
+$r5_el_range = 'Periodic Table Entries!A74:G91';
 $r5_el_resp = $service->spreadsheets_values->get($spreadsheetId, $r5_el_range);
 $r5_els = $r5_el_resp->getValues();
 
 // Row 6
-$r6_el_range = 'Periodic Table Entries!A92:E109';
+$r6_el_range = 'Periodic Table Entries!A92:G109';
 $r6_el_resp = $service->spreadsheets_values->get($spreadsheetId, $r6_el_range);
 $r6_els = $r6_el_resp->getValues();
 
 // Row 7
-$r7_el_range = 'Periodic Table Entries!A110:E127';
+$r7_el_range = 'Periodic Table Entries!A110:G127';
 $r7_el_resp = $service->spreadsheets_values->get($spreadsheetId, $r7_el_range);
 $r7_els = $r7_el_resp->getValues();
 
 // Row 8
-$r8_el_range = 'Periodic Table Entries!A128:E141';
+$r8_el_range = 'Periodic Table Entries!A128:G141';
 $r8_el_resp = $service->spreadsheets_values->get($spreadsheetId, $r8_el_range);
 $r8_els = $r8_el_resp->getValues();
 
 // Row 9
-$r9_el_range = 'Periodic Table Entries!A142:E155';
+$r9_el_range = 'Periodic Table Entries!A142:G155';
 $r9_el_resp = $service->spreadsheets_values->get($spreadsheetId, $r9_el_range);
 $r9_els = $r9_el_resp->getValues();
 ?>
@@ -71,7 +71,8 @@ $r9_els = $r9_el_resp->getValues();
 
 <head>
 	<title>Franklin D. Roosevelt's Periodic Table New Deal Programs</title>
-	<link rel="stylesheet" href="style-fdr.css?v=<?php echo filemtime('style.css'); ?>" media="screen, projection" />
+	<link rel="stylesheet" href="style-fdr.css?v=<?php echo filemtime('style-fdr.css'); ?>" media="screen, projection" />
+	<link rel="stylesheet" href="responsive.css?v=<?php echo filemtime('responsive.css'); ?>" media="screen, projection" />
 </head>
 
 <body>
@@ -88,7 +89,7 @@ $r9_els = $r9_el_resp->getValues();
 					foreach ($r1_els as $row) {
 						$id  = $row[1];
 						$class  = $row[2];
-						$title  = $row[3];
+						$title  = $row[4];
 						$target = '#' . $id;
 
 						if ($class == 'element empty-element') {
@@ -109,7 +110,7 @@ $r9_els = $r9_el_resp->getValues();
 					foreach ($r2_els as $row) {
 						$id  = $row[1];
 						$class  = $row[2];
-						$title  = $row[3];
+						$title  = $row[4];
 						$target = '#' . $id;
 
 						if ($class == 'element empty-element') {
@@ -130,7 +131,7 @@ $r9_els = $r9_el_resp->getValues();
 					foreach ($r3_els as $row) {
 						$id  = $row[1];
 						$class  = $row[2];
-						$title  = $row[3];
+						$title  = $row[4];
 						$target = '#' . $id;
 
 						if ($class == 'element empty-element') {
@@ -151,7 +152,7 @@ $r9_els = $r9_el_resp->getValues();
 					foreach ($r4_els as $row) {
 						$id  = $row[1];
 						$class  = $row[2];
-						$title  = $row[3];
+						$title  = $row[4];
 						$target = '#' . $id;
 
 						if ($class == 'element empty-element') {
@@ -172,7 +173,7 @@ $r9_els = $r9_el_resp->getValues();
 					foreach ($r5_els as $row) {
 						$id  = $row[1];
 						$class  = $row[2];
-						$title  = $row[3];
+						$title  = $row[4];
 						$target = '#' . $id;
 
 						if ($class == 'element empty-element') {
@@ -193,7 +194,7 @@ $r9_els = $r9_el_resp->getValues();
 					foreach ($r6_els as $row) {
 						$id  = $row[1];
 						$class  = $row[2];
-						$title  = $row[3];
+						$title  = $row[4];
 						$target = '#' . $id;
 
 						if ($class == 'element empty-element') {
@@ -214,7 +215,7 @@ $r9_els = $r9_el_resp->getValues();
 					foreach ($r7_els as $row) {
 						$id  = $row[1];
 						$class  = $row[2];
-						$title  = $row[3];
+						$title  = $row[4];
 						$target = '#' . $id;
 
 						if ($class == 'element empty-element') {
@@ -237,7 +238,7 @@ $r9_els = $r9_el_resp->getValues();
 					foreach ($r8_els as $row) {
 						$id  = $row[1];
 						$class  = $row[2];
-						$title  = $row[3];
+						$title  = $row[4];
 						$target = '#' . $id;
 
 						if ($class == 'element empty-element') {
@@ -258,7 +259,7 @@ $r9_els = $r9_el_resp->getValues();
 					foreach ($r9_els as $row) {
 						$id  = $row[1];
 						$class  = $row[2];
-						$title  = $row[3];
+						$title  = $row[4];
 						$target = '#' . $id;
 
 						if ($class == 'element empty-element') {
